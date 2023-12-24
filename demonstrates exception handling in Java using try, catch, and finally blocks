@@ -1,0 +1,12 @@
+public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {1, 2, 3};
+            System.out.println("Element at index 5: " + numbers[5]); // Causes an ArrayIndexOutOfBoundsException
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds");
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
